@@ -1,9 +1,16 @@
 import React from 'react';
+import PegRow from './PegRow';
 
 export const Gameboard = () => {
 
+    const difficultyLevel = 4;
+
     return (
-        <div>Gameboard Component</div>
+        <React.Fragment>
+            <div>Gameboard Component</div>
+
+            <PegRow difficultyLevel={difficultyLevel}/>
+        </React.Fragment>
     );
 }
 
